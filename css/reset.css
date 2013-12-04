@@ -1,0 +1,67 @@
+html, body, div, form, fieldset 
+{
+   margin: 0;
+   padding: 0;
+   font: 14px/140%  'Droid Sans', Arial, Verdana, Tahoma, Helvetica, sans-serif;
+   color:#333;
+ }
+html {   height:100%; }
+ BODY 
+{
+	background:#FFFFFF url(/uploads/images/background/background.gif) repeat-x scroll left top;
+	height:100%;
+	width:100%;
+}
+
+a { color:#333; text-decoration:none; }
+a:hover { color:#333; text-decoration:underline; }
+a img { border:0;}
+
+/* Heading */
+h1, h2, h3, h4, h5, h6, .head {
+	margin:0 0 0.4em;
+	color:#333;
+}
+h2 { font-size:1.5em; }
+h3 { font-size:1.35em; }
+h4 { font-size:1.05em; }
+h5 { font-size:1.05em; }
+h6 { font-size:.95em; }
+
+/* Table */
+th { padding:0; text-align:left; vertical-align:top; }
+td {padding:0;vertical-align:top;}
+
+/* Paragraph */
+p { margin-bottom:.8em; }
+
+/* Form */
+form { 	display:inline;}
+label { color:#333;  cursor: pointer; }
+input, select, button { vertical-align:middle; }
+input, select, textarea { 
+   font-size: 	100%;
+   font-family: inherit;
+}
+input.input-text {	height:16px; color:#333;}
+select {	height:19px;	}
+
+/* Lists */
+ol, ul, li 
+{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+:focus { outline: 0; }
+input { outline: 0;}
+
+.clear { clear:both;}
+.a-left { float:left; margin:0 5px 0 0;}
+.a-right { float:right; margin:0 0 0 5px;}
+
+/* HTML 5 */
+header, nav, footer, figure, section, article, figcaption, aside { /* @note : introducing new HTML5 elements */
+	display: block;
+}

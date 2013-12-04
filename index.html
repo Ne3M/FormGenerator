@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/jquery.onload.js"></script>
+<script type="text/javascript" src="script/jquery.fn.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"></link>
+<link rel="stylesheet" type="text/css" href="css/template.css"></link>
+<link rel="stylesheet" type="text/css" href="css/formulaire.css"></link>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<!--[if lte 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie7.css"></link>
+<![endif]-->
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/ie6.css"></link>
+<![endif]-->
+
+<title>G&eacute;n&eacute;rateur de formulaire</title>
+</head>
+<body>
+<div id="older_form">
+	<h2>Formulaire sauvegardé</h2>
+</div>
+<div id="container">
+	<h1>G&eacute;n&eacute;rateur de formulaire</h1>
+	<h2>Ou comment normaliser le balisage des formulaires chez Naxeo</h2>
+	
+	<fieldset id="name_form">
+		<label><strong>1 &raquo;</strong> Nommer le formulaire</label>
+		<ul class="custom_form">
+			<li>
+				<label for="form_name">Nom du formulaire</label>
+				<input type="text" name="form_name" id="form_name" value="" />
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset id="add_input">
+		<label><strong>2 &raquo;</strong> Ajouter des champs</label>
+		<ul class="custom_form">
+			<li id="type_champ">
+				<label for="type_de_champ">Type de champ</label>
+				<select id="type_de_champ">
+					<option value="" class="default_option">--- S&eacute;lectionner un type ---</option>
+					<option value="text">Ligne de texte</option>
+					<option value="textarea">Zone de texte</option>
+					<option value="select">Liste d&eacute;roulante</option>
+					<option value="radio">Bouton radio</option>
+					<option value="checkbox">Case &agrave; cocher</option>
+					<option value="checkboxList">Liste de case &agrave; cocher</option>
+					<option value="hidden">Champ cach&eacute;</option>
+					<option value="password">Mot de passe</option>
+					<option value="valid">Bouton valider</option>
+				</select>
+			</li>
+			<li id="nom_champ">
+				<label for="nom_du_champ">Nom du champ</label>
+				<input type="text" id="nom_du_champ" />
+			</li>
+			<li class="validation" id="add_option">
+				<button id="ajout_option">Ajouter une autre option</button>
+			</li>
+			<li class="validation" id="valider_champ">
+				<button id="confirm_input">Valider ce champ</button>
+			</li>
+		</ul>
+	</fieldset>
+	
+	<fieldset id="current_form">
+		<label><strong>3 &raquo;</strong> Prévisualiser le formulaire</label>
+		<div class="hidden_field_interface">	
+			<div class="hidden_field">
+			</div>
+		</div>
+		<ul class="custom_form">
+		</ul>
+	</fieldset>
+	
+	
+	<fieldset id="source_code">
+		<label for="result"><strong>4 &raquo;</strong> Copier/coller le code source dans la page HTML</label>
+		<textarea id="result"></textarea>
+		<label for="file_to_add"><strong>5 &raquo;</strong> Inclure les fichiers dans la page HTML</label>
+		<div id="file_to_add">
+			&lt;link rel="stylesheet" type="text/css" href="css/formulaire.css"&gt;&lt;/link&gt;<br />
+			<br />
+			&lt;script type="text/javascript" src="script/jquery.js"&gt;&lt;/script&gt;<br />
+			&lt;script type="text/javascript" src="script/jquery.onload.js"&gt;&lt;/script&gt;<br />
+			&lt;script type="text/javascript" src="script/jquery.fn.js"&gt;&lt;/script&gt;
+		</div>
+	</fieldset>
+</div>
+
+</body>
+</html>
